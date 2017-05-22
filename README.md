@@ -9,7 +9,9 @@ This is a product for clinicians working with young people with learning difficu
 Currently the forms tend to be filled out by the patient's parents and thus don't accurately represent the views of the young
 
 
+## User Journey
 
+as a clincian I want to better understand the experiences of my service users and the feedback from our sessions so that I can get a better understanding of their needs and use that to inform our sessions and their treatment. 
 
 ## User stories
 
@@ -21,7 +23,7 @@ as a clinician I want to be able to modify the questionaire based on the severit
 
 (possible stretch goal) as a clinician I would like to track the progress of my patient in some form of graph.
 
-as a clinician I would like the content of my questionaire to be available in text, symbols, makaton videos and traffic light style colour representations
+as a clinician I would like the cont ent of my questionaire to be available in text, symbols, makaton videos and traffic light style colour representations
 
 as a clinician I would like to be able to use the app for the pre and post session questionaire
 
