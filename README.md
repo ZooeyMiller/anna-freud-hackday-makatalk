@@ -19,7 +19,10 @@ As a clinician I want to better understand the experiences of my service users a
 
 As a clinician, I want to be able to collect the consent of my patient, or their representative, to that I can abide by my legal obligations as a clinician  
 
-As a clinician I want to be able to add a new patient or select a patient that I have previously added
+As a clinician I want to be able to add a new patient, so that a new patient can start using the app
+
+As a clinician I want to be able to select a patient that I have previously added, so that a returning user can use the app
+
 
 As a clinician I want to be able to modify the questionnaire based on the severity of the patient's learning difficulties. (mild/moderate/severe)
 
