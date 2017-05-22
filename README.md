@@ -23,7 +23,6 @@ As a clinician I want to be able to add a new patient or select a patient that I
 
 As a clinician I want to be able to modify the questionnaire based on the severity of the patient's learning difficulties. (mild/moderate/severe)
 
-As a clinician I would like to track the progress of my patient in some form of graph (possible stretch goal)
 
 As a clinician I would like the content of my questionnaire to be available in text, symbols, makaton videos and traffic light style colour representations, so that I can communicate effectively with my patients
 
@@ -39,6 +38,12 @@ As a clinician I would like to be able to have a unique code for each patient so
 * implement rewards for patients who regularly fill out the forms
 
 * multiple language support: eg. Portuguese, Somali, Tamil.
+
+* patient progress indicator (perhaps in the form of a graph)
+
+* ability for clinician to input their own questions
+
+
 
 
 ## Scope
