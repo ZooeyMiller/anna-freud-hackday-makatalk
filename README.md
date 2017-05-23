@@ -43,15 +43,15 @@ As a clinician, I would like to be able to input the child's name, so that it ca
 
 As a clinician, I would like to be able to confirm that I've selected the right survey, so I don't hand the service user the wrong survey
 
-As a clinician, I would like to be able to change the type of survey that I've selected, in case I have selected the wrong one
+As a clinician, I would like to be able to change the type of survey that I've selected, so that I'm able to select a different one in case I've made a mistake.
 
 As a clinician, I would like to be able to confirm that I've inputted the right name, so that their name is displayed correctly within the app  
 
-As a clinician, I would like to be able to change the name that I inputted for the young person, in case I've made an error when I inputted it
+As a clinician, I would like to be able to change the name that I inputted for the young person, so that I am able to correct my mistake in case I've made one
 
 As a clinician, I would like to make how to use the app as clear as possible, so that that service users can use the app as independently as possible
 
-As a clinician, I would like to give service users the ability to replay makaton answer options, in case they missed them or need a reminder
+As a clinician, I would like to give service users the ability to replay makaton answer options, so that they are able to play again the ones they missed or didn't fully understand
 
 As a clinician, I would like to prompt the service user to return the device to whomever handed it to them, so that they know what to do once they've finished the survey
 
