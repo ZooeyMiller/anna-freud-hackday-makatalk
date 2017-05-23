@@ -57,6 +57,9 @@ As a clinician, I would like to prompt the service user to return the device to 
 
 As a clinician, I would like to have to login again before I see any patient results so that only the appropriate people can see this information
 
+As a clinician, I would like to have to login before I can initiate a new survey, so that I can keep track of my patients 
+
+
 
 ## Stretch goals
 * get the parent's and teachers feedback on the content of the form for the patient too.
