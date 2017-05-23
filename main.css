@@ -1,0 +1,83 @@
+:root{
+--bg-color: #DCB239;
+--box-bg-color: #FEDCD2;
+--text-color: rgb(43, 43, 41);
+}
+
+
+body {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(43, 43, 41);
+}
+.page-content-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.back-to-survey-selection {
+  text-align: left;
+}
+
+.back-to-survey-selection-link {
+  font-size: 2em;
+}
+
+.handover-text {
+  font-size: 3em;
+}
+
+.start-survey-button {
+  background: var(--box-bg-color);
+  padding: 0.1em 6em;
+}
+
+.start-survey-button {
+  font-size: 2rem;
+}
+
+/* survey-complete.html */
+.welcome-user-header {
+  font-size: 3em;
+}
+.welcome-user-text {
+  font-size: 3em;
+}
+.welcome-user-start-prompt {
+  font-size: 2em;
+}
+.welcome-user-start-button {
+  background: var(--box-bg-color);
+  padding: 0.1em 6em;
+}
+
+.welcome-user-start-button-text {
+  font-size: 2em;
+}
+
+/* survey-complete.html */
+.header-survey-complete {
+  font-size: 2em;
+}
+
+.survey-complete-text {
+  font-size: 4em;
+}
+
+.complete-survey-button {
+  background: var(--box-bg-color);
+  padding: 0.1em 6em;
+}
+
+.complete-survey-button-text {
+  font-size: 2em;
+}
