@@ -3,12 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Anna Freud Prototype</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
+    <section class="container">
       <h1>Makaton App</h1>
-      <p>beautiful image here</p>
+      <p>stuff about what we do</p>
+      <input type="text" placeholder="username">
+      <input type="text" placeholder="password">
       <button>sign in</button>
-    </header>
+    </section>
+    <style>
+    body{
+      background-color: var(--bg-color);
+      box-sizing: border-box;
+      font-family: helvetica;
+      color: var(--text-color);
+      text-align: center;
+      display: inline;
+    }
+    .container {
+      background-color: var(--box-bg-color);
+      width: 60%;
+      margin: 0 auto;
+      padding: 30px
+    }
+    input {
+      display: list-item;
+      margin: 0 auto 5px;
+
+    }
+    button{
+      background-color: var(--box-bg-color);
+      border: 0;
+      box-shadow: 2px 2px 2px #888888;
+      width: 28%;
+      padding: 2px
+    }
+    h1, p{
+      margin: 5px;
+    }
+
+    </style>
   </body>
 </html>
