@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./style.css">
   <title></title>
 </head>
 
@@ -51,19 +50,33 @@
   </section>
   </section>
   <style>
+  :root{
+    --bg-color-clinician: #DF744A;
+    --bg-color-user: #DCB239;
+    --bg-form: white;
+    --box-bg-color: #FEDCD2;
+    --text-color: rgb(43, 43, 41);
+  }
+
     body {
       color: var(--text-color);
       box-sizing: border-box;
-      background-color: var(--bg-color);
+      background-color: var(--bg-color-user);
       font-family:'Ubuntu';
       height: 100vh;
     }
 
     .container {
-      background-color: var(--box-bg-color);
+      background-color: var(--bg-form);
       width: 90%;
       height: 90%;
-      padding: 3%
+      padding: 3%;
+      border-top:1px solid rgb(186, 152, 141);
+      border-radius:3px;
+      -webkit-box-shadow: 0px 1px 1px #000;
+      -moz-box-shadow: 0px 1px 1px #000;
+      box-shadow: 0px 1px 1px #000;
+
     }
     .question {
       width: 72%;
@@ -76,7 +89,7 @@
         border:0;
         border-top:1px solid rgb(186, 152, 141);
         border-radius:3px;
-        background:var(--box-bg-color);
+        background: var(--bg-color-user);
         width:49%;
         color:#000;
         font-size:2rem;

@@ -1,5 +1,7 @@
 :root{
-  --bg-color: #BFD8D2;
+  --bg-color-clinician: #DF744A;
+  --bg-color-user: #DCB239;
+  --bg-form: white;
   --box-bg-color: #FEDCD2;
   --text-color: rgb(43, 43, 41);
 }
