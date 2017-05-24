@@ -1,43 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <section>
-      <article>
-        <img src="http://placehold.it/850x550">
-        <p>How are you today?</p>
-      </article>
 
-      <article>
-        <figure style="width: 20%; display: inline-block; margin: 10px">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <section class='container centered'>
+
+      <img class="centered question" src="http://placehold.it/850x550">
+      <p>How are you today?</p>
+
+    <ul class="centered all-answers">
+      <li class="answer">
+        <figure>
           <img src="http://placehold.it/150x125">
-          <figcaption >Very Good</figcaption>
+          <figcaption>Very Bad</figcaption>
         </figure>
-        <figure style="width: 20%; display: inline-block; margin: 10px">
-          <img src="http://placehold.it/150x125">
-          <figcaption>Good</figcaption>
-        </figure>
-        <figure style="width: 20%; display: inline-block; margin: 10px">
-          <img src="http://placehold.it/150x125">
-          <figcaption>OK</figcaption>
-        </figure>
-        <figure style="width: 20%; display: inline-block; margin: 10px">
+      </li>
+      <li class="answer">
+        <figure>
           <img src="http://placehold.it/150x125">
           <figcaption>Bad</figcaption>
         </figure>
-        <figure style="width: 20%; display: inline-block; margin: 10px">
+      </li>
+      <li class="answer">
+        <figure>
           <img src="http://placehold.it/150x125">
-          <figcaption>Very Bad</figcaption>
+          <figcaption>OK</figcaption>
+        </figure>
+      </li>
+      <li class="answer">
+        <figure>
+          <img src="http://placehold.it/150x125">
+          <figcaption>Good</figcaption>
+        </figure>
+      </li>
+      <li class="answer">
+        <figure>
+          <img src="http://placehold.it/150x125">
+          <figcaption>Very Good</figcaption>
+        </figure>
+      </li>
+    </ul>
+    <section class="buttons">
+    <button>Replay all ↺</button>
+    <button>Next question</button>
+  </section>
+  </section>
+  <style>
+  :root{
+    --bg-color-clinician: #DF744A;
+    --bg-color-user: #DCB239;
+    --bg-form: white;
+    --box-bg-color: #FEDCD2;
+    --text-color: rgb(43, 43, 41);
+  }
 
-        <p>replay</p>
-      </article>
+    body {
+      color: var(--text-color);
+      box-sizing: border-box;
+      background-color: var(--bg-color-user);
+      font-family:'Ubuntu';
+      height: 100vh;
+    }
 
-      <button>Next question</button>
+    .container {
+      background-color: var(--bg-form);
+      width: 90%;
+      height: 90%;
+      padding: 3%;
+      border-top:1px solid rgb(186, 152, 141);
+      border-radius:3px;
+      -webkit-box-shadow: 0px 1px 1px #000;
+      -moz-box-shadow: 0px 1px 1px #000;
+      box-shadow: 0px 1px 1px #000;
 
-    </section>
+    }
+    .question {
+      width: 72%;
+    }
+    .buttons {
+      width: 80%;
+      margin: 2% auto 2%;
+    }
+    button {
+        border:0;
+        border-top:1px solid rgb(186, 152, 141);
+        border-radius:3px;
+        background: var(--bg-color-user);
+        width:49%;
+        color:#000;
+        font-size:2rem;
+        -webkit-text-shadow: 0px 1px 1px #fff;
+        -moz-text-shadow: 0px 1px 1px #fff;
+        text-shadow: 0px 2px 1px #fff;
+        -webkit-box-shadow: 0px 1px 1px #000;
+        -moz-box-shadow: 0px 1px 1px #000;
+        box-shadow: 0px 1px 1px #000;
 
-  </body>
+    }
+    li {
+      list-style: none;
+
+    }
+
+    .answer {
+      width: 19%;
+      display: inline-block;
+    }
+    .centered {
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      font-size: 2rem;
+      margin: 2%;
+      text-align: center;
+      -webkit-text-shadow: 0px 1px 1px #fff;
+      -moz-text-shadow: 0px 1px 1px #fff;
+      text-shadow: 0px 2px 1px #fff;
+    }
+    .all-answers {
+      width: 90%;
+      padding: 0;
+    }
+    figure {
+      margin: 0;
+    }
+    figure img {
+      width: 100%
+    }
+    figcaption {
+      text-align: center;
+    }
+  </style>
+</body>
+
 </html>
