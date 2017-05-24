@@ -46,7 +46,7 @@
       </li>
     </ul>
     <section class="buttons">
-    <button>replay all ↺</button>
+    <button>Replay all ↺</button>
     <button>Next question</button>
   </section>
   </section>
@@ -54,25 +54,39 @@
     body {
       color: var(--text-color);
       box-sizing: border-box;
-      background-color: var(--bg-color)
+      background-color: var(--bg-color);
+      font-family:'Ubuntu';
+      height: 100vh;
     }
 
     .container {
       background-color: var(--box-bg-color);
       width: 90%;
       height: 90%;
-      padding: 2%
+      padding: 3%
     }
     .question {
-      width: 80%;
+      width: 72%;
     }
     .buttons {
       width: 80%;
-      margin: 0 auto 1% 1%;
+      margin: 2% auto 2%;
     }
     button {
-      width: 45%;
-      padding: 1%
+        border:0;
+        border-top:1px solid rgb(186, 152, 141);
+        border-radius:3px;
+        background:var(--box-bg-color);
+        width:49%;
+        color:#000;
+        font-size:2rem;
+        -webkit-text-shadow: 0px 1px 1px #fff;
+        -moz-text-shadow: 0px 1px 1px #fff;
+        text-shadow: 0px 2px 1px #fff;
+        -webkit-box-shadow: 0px 1px 1px #000;
+        -moz-box-shadow: 0px 1px 1px #000;
+        box-shadow: 0px 1px 1px #000;
+
     }
     li {
       list-style: none;
@@ -91,6 +105,9 @@
       font-size: 2rem;
       margin: 2%;
       text-align: center;
+      -webkit-text-shadow: 0px 1px 1px #fff;
+      -moz-text-shadow: 0px 1px 1px #fff;
+      text-shadow: 0px 2px 1px #fff;
     }
     .all-answers {
       width: 90%;
