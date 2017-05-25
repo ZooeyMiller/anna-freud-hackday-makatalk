@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="115px" viewBox="0 0 90 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>replay</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="video_view" transform="translate(-63.000000, -268.000000)">
+            <g id="replay" transform="translate(62.000000, 269.000000)">
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="46" cy="44" r="40"></circle>
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="46" cy="44" r="44"></circle>
+                <g id="ic_replay" transform="translate(14.000000, 12.000000)">
+                    <g id="Icon-24px">
+                        <polygon id="Shape" points="0 0 65 0 65 65 0 65"></polygon>
+                        <path d="M32.5,13.5416667 L32.5,2.70833333 L18.9583333,16.25 L32.5,29.7916667 L32.5,18.9583333 C41.4645833,18.9583333 48.75,26.24375 48.75,35.2083333 C48.75,44.1729167 41.4645833,51.4583333 32.5,51.4583333 C23.5354167,51.4583333 16.25,44.1729167 16.25,35.2083333 L10.8333333,35.2083333 C10.8333333,47.1791667 20.5291667,56.875 32.5,56.875 C44.4708333,56.875 54.1666667,47.1791667 54.1666667,35.2083333 C54.1666667,23.2375 44.4708333,13.5416667 32.5,13.5416667 L32.5,13.5416667 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <text id="Replay-all" font-family="ClearSans-Medium, Clear Sans Medium" font-size="20" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="1.64673069" y="110">Replay all</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
