@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <h1>Thanks, [NAME]!</h1>
-    </header>
+<html lang="en">
 
-    <section>
-      <article>
-        <p>Please give this device back to the person who gave it to you and wait for your appointment</p>
-      </article>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
 
-      <button>OK</button>
-    </section>
-  </body>
+<body>
+  <navbar class="navbar">
+    <img src="./assets/icons/back_icon_blue.svg" alt="back button" class="navbar__back">
+    <img src="./assets/logos/MakaTalk_logo_dark.svg" alt="makatalk logo" class="navbar__logo">
+  </navbar>
+
+  <img src="./assets/components/thank_you_modal@3x.png.png" alt="" class="thankyou">
+  <img src="./assets/images/thank_you_image_small.png" alt="" class="thankyou-image">
+  <style>
+    .navbar {
+      top: 0;
+      width: 100%;
+      border-bottom: 1px solid #5144AF;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      display: flex;
+    }
+
+
+    .navbar__logo {
+      margin: 0 auto;
+      transform: translate(-50%);
+    }
+
+    .main {
+      width: 80%;
+      font-size: 0;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    .thankyou {
+      position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translate(-10%, -50%);
+      width: 45%;
+    }
+
+    .thankyou-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+    }
+  </style>
+</body>
+
 </html>
