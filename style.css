@@ -24,6 +24,7 @@ html {
 body{
   background-color: var(--bg-color-clinician);
   height: 100%;
+  margin: 0;
 }
 
 #login, #dashboard{
