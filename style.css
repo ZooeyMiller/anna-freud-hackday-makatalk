@@ -19,12 +19,14 @@
 /* needed for height setting on page*/
 html {
   height: 100%;
+  width: 100%;
 }
 
 body{
-  background-color: var(--bg-color-clinician);
+  /*background-color: var(--bg-color-clinician);*/
   height: 100%;
   margin: 0;
+  width: 100%;
 }
 
 #login, #dashboard{
