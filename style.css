@@ -16,8 +16,15 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
+/* needed for height setting on page*/
+html {
+  height: 100%;
+}
+
 body{
   background-color: var(--bg-color-clinician);
+  height: 100%;
+  margin: 0;
 }
 
 #login, #dashboard{
