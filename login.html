@@ -7,23 +7,49 @@
   <link rel="stylesheet" href="./style.css">
   <title>Login</title>
 </head>
+
 <body>
-  <form id='login'>
-    <h1>HappyOrNot Login</h1>
-    <span class='input'>
-      <span class='icon username-icon fontawesome-user'></span>
-      <input type='text' class='username' placeholder='Username'></span>
-    <span class='input'>
-      <span class='password-icon-style icon password-icon fontawesome-lock'></span>
-      <input type='password' class='password' placeholder='Password'>
-    </span>
-    <a href='' class='forgot'>Forgot Details?</a>
-    <div class='divider'></div>
-    <button class='login-btn'>SIGN IN</button>
-    <p>Don't have an account? <a href='' class='reg'>Register.</a></p>
-  </div>
-    </form>
-</div>
+
+  <section class="login-page-container">
+  <img class="login-page-img" src="assets/components/login_box.png"></img>
+  </section>
+
+
+<style>
+.login-page-container {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("assets/images/login_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-page-img {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 25em;
+  height: auto;
+}
+</style>
 
 </body>
 </html>
+
+<!-- <form id='login'>
+  <h1>HappyOrNot Login</h1>
+  <span class='input'>
+    <span class='icon username-icon fontawesome-user'></span>
+    <input type='text' class='username' placeholder='Username'></span>
+  <span class='input'>
+    <span class='password-icon-style icon password-icon fontawesome-lock'></span>
+    <input type='password' class='password' placeholder='Password'>
+  </span>
+  <a href='' class='forgot'>Forgot Details?</a>
+  <div class='divider'></div>
+  <button class='login-btn'>SIGN IN</button>
+  <p>Don't have an account? <a href='' class='reg'>Register.</a></p>
+</div>
+  </form> -->
