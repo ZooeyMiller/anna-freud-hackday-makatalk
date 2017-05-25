@@ -1,0 +1,31 @@
+{
+  pre: {
+    hiHowAreYou: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Hi%2C+how+are+you.mp4",
+    howAreYou: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/How+are+you.mp4",
+    home: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Home.mp4",
+    school: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/School.mp4",
+    friends: 	"https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Friends.mp4",
+    playing: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Playing.mp4",
+    lastWeekSad: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Last+week+sad.mp4",
+    betterNextWeek: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/pre/Better+Next+Week.mp4",
+  },
+  post: {
+      didTheyListen: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/post/Did+they+listen+.mp4",
+      didYouLikeToday: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/post/Did+you+like+today.mp4",
+      didItHelpYou: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/post/Did+it+help+you.mp4",
+      comeAgain: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/post/Would+you+come+again.mp4"
+  },
+  answers: {
+    veryBad: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4",
+    bad: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Bad.mp4",
+    okay: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/OK.mp4",
+    good: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Good.mp4",
+    veryGood: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Good.mp4",
+    yes: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Yes.mp4",
+    no: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/No.mp4",
+    iDontKnow: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/I+don't+know.mp4",
+    happy: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Happy.mp4",
+    sad: "	https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Sad.mp4",
+    youChoose: "https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/You+Choose.mp4"
+   }
+}
