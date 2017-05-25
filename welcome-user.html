@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome User</title>
 </head>
+
 <body>
-  <section>
-    <h2>Hi, Jimmy!</h2>
-    <p>We've got a few questions for you. Please tap on the answer that is right for you.</p>
-    <p>Ready to start?</p>
+  <navbar class="navbar">
+    <img src="./assets/icons/back_icon_blue.svg" alt="back button" class="navbar__back">
+    <img src="./assets/logos/MakaTalk_logo_dark.svg" alt="makatalk logo" class="navbar__logo">
+  </navbar>
+  <section class="main">
+    <img src="./assets/images/bear_image_light_small.png" alt="" class="main__images">
+    <img src="./assets/components/yp_view_modal_light.png" alt="" class="main__images">
   </section>
-  <button type="button">Start</button>
+  <style>
+    .navbar {
+
+
+      top: 0;
+      width: 100%;
+      border-bottom: 1px solid #5144AF;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      display: flex;
+    }
+
+
+    .navbar__logo {
+      margin: 0 auto;
+
+      transform: translate(-50%);
+    }
+
+    .main {
+      width: 80%;
+      font-size: 0;
+
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    .main__images {
+      display: inline-block;
+      width: 50%;
+    }
+  </style>
 </body>
+
 </html>
