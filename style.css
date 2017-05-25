@@ -22,7 +22,7 @@ html {
 }
 
 body{
-  background-color: var(--bg-color-clinician);
+  background-color: #FAFAFA;
   height: 100%;
   margin: 0;
 }
@@ -264,4 +264,16 @@ span.password-icon-style.icon.password-icon.fontawesome-lock {
 
 #btn-group {
   margin-top: 100px;
+}
+
+/* Clinician Dashboard */
+.dashboard-header-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dashboard-img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
 }

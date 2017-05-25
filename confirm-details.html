@@ -7,8 +7,29 @@
   <title>Confirm User and Assignment Questions</title>
 </head>
 <body>
-<p> You have selected the Pre Assignment Questions for Jimmy. Please pass the device to Jimmy. </p>
-<button type="button">Back</button>
-<button type="button">Start</button>
+  <section class="confirm-details-page-container">
+    <img class="confirm-details-page-img" src="assets/components/pass_to_modal.png"></img>
+  </section>
+
+<style>
+  .confirm-details-page-container {
+      min-height: 100%;
+      width: 100%;
+      position: relative;
+      background-image: url("assets/images/login_image.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .confirm-details-page-img {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 25em;
+      height: auto;
+    }
+
+</style>
 </body>
 </html>
