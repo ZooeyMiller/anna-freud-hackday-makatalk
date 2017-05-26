@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+ :root {
+  --background-purple: #565CC8;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  display: flex;
+  background: var(--background-purple);
+}
+
+
+.navbar__logo {
+  margin: 0 auto;
+  transform: translate(-50%);
+}
+
+.navbar__back {
+  margin-left: 15px;
+}
+
+.question-container {
+  background: var(--background-purple);
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.question-makaton {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.question-makaton-text {
+  text-align: center;
+  /*padding: 0 0 20px 0;*/
+  font-size: 2.5em;
+  color: var(--background-purple);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.question-makaton-video {
+  max-width: 91%;
+  margin: 0 auto;
+  display: block;
+}
+
+.replay-makaton {
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 15%;
+}
+
+.answers-container {
+  background: #fff;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  /*height: 90vh;*/
+  flex-wrap: wrap;
+  background-image: url('./assets/images/bear_image_light_small_flipped.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 26%;
+  padding: 5px 0px 5px 5px;
+  position: relative;
+}
+
+.answer-video {
+  width: 100%;
+  height: auto;
+  /*transform-origin: center;*/
+  /*transition: width 1s ease, height 1s ease;*/
+  transition: width 0.5s;
+}
+
+.answer-text {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--background-purple);
+}
+
+.replay-makaton-button {}
+
+.answer-makaton {
+  width: 33%;
+  margin: 5px;
+}
+
+.answer-makaton-video {}
+
+.next-question-button {
+  margin: 1% auto;
+  display: block;
+}
+
+
+.next-question-button {
+  font-size: 1.5em;
+  background: var(--background-purple);
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 50px;
+}
+
+.playing-answer {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%);
+}
+
+body {
+  height: auto;
+}
+
+.back-to-top {
+  display: none;
+  position: relative;
+  bottom: 4em;
+  left: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.glowing-border {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  outline: none;
+  border-color: var(--background-purple);
+  box-shadow: 0 0 1em var(--background-purple);
+}
