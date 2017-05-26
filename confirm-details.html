@@ -1,35 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Confirm User and Assignment Questions</title>
-</head>
-<body>
-  <section class="confirm-details-page-container">
-    <img class="confirm-details-page-img" src="./assets/components/pass_to_modal.png "onclick="location.href='welcome-user.html'"></img>
-  </section>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select Assessment Type</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
 
-<style>
-  /*.confirm-details-page-container {
-      min-height: 100%;
-      width: 100%;
-      position: relative;
-      background-image: url("assets/images/login_image.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  <body>
+    <section class="confirm-details-page-container">
 
-    .confirm-details-page-img {
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      width: 25em;
-      height: auto;
-    }*/
+      <form class="confirm-details-modal">
 
-</style>
+        <img class="confirm-details-modal-img" src="./assets/components/pass_to_modal.png "onclick="location.href='welcome-user.html'"></img>
+      </form>
+    </section>
+
+  <style>
+
+
+    .confirm-details-page-container {
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url("assets/images/pass_to_yp_image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .confirm-details-modal {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: 25em;
+        background: red;
+        height: 30em;
+        text-align: center;
+        border-radius: 4px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(146,143,143,50);
+      }
+
+      .confirm-details-modal-img {
+        width: 99%;
+        height: 99%;
+      }
+
+  </style>
 </body>
+
 </html>
