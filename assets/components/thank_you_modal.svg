@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="478px" height="563px" viewBox="0 0 478 563" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>thank_you_modal</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="414" height="499" rx="4"></rect>
+        <filter x="-14.5%" y="-7.2%" width="129.0%" height="124.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="24" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0470588235   0 0 0 0 0   0 0 0 0 0.2  0 0 0 0.211333786 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="0" y="0" width="257" height="48" rx="3"></rect>
+    </defs>
+    <g id="App" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Thank_you!" transform="translate(-74.000000, -127.000000)">
+            <text id="How-are-you-today?" font-family="ClearSans-Medium, Clear Sans Medium" font-size="40" font-weight="normal" fill="#FFFFFF">
+                <tspan x="332.138672" y="117.8">How are you today?</tspan>
+            </text>
+            <g id="replay" transform="translate(62.000000, 269.000000)">
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="46" cy="44" r="40"></circle>
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="46" cy="44" r="44"></circle>
+                <g id="ic_replay" transform="translate(14.000000, 12.000000)">
+                    <g id="Icon-24px">
+                        <polygon id="Shape" points="0 0 65 0 65 65 0 65"></polygon>
+                        <path d="M32.5,13.5416667 L32.5,2.70833333 L18.9583333,16.25 L32.5,29.7916667 L32.5,18.9583333 C41.4645833,18.9583333 48.75,26.24375 48.75,35.2083333 C48.75,44.1729167 41.4645833,51.4583333 32.5,51.4583333 C23.5354167,51.4583333 16.25,44.1729167 16.25,35.2083333 L10.8333333,35.2083333 C10.8333333,47.1791667 20.5291667,56.875 32.5,56.875 C44.4708333,56.875 54.1666667,47.1791667 54.1666667,35.2083333 C54.1666667,23.2375 44.4708333,13.5416667 32.5,13.5416667 L32.5,13.5416667 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <text id="Replay-all" font-family="ClearSans-Medium, Clear Sans Medium" font-size="20" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="1.64673069" y="110">Replay all</tspan>
+                </text>
+            </g>
+            <g id="Group-3" transform="translate(106.000000, 135.000000)">
+                <g id="Group">
+                    <g id="Bounding-Box">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#565CC8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="Thank-you,-Jimmy!" font-family="Amatic-Bold, Amatic" font-size="40" font-style="condensed" font-weight="bold" line-spacing="48" fill="#FFFFFF">
+                        <tspan x="145.951172" y="103">Thank you,  </tspan>
+                        <tspan x="164.447266" y="151">Jimmy!</tspan>
+                    </text>
+                    <g id="Button/Large" transform="translate(73.000000, 345.000000)">
+                        <g id="Mixin/Button/Fill">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Mask"></g>
+                            <g id="Mixin/Fill/Secondary" mask="url(#mask-4)" fill-rule="evenodd" fill="#D90368">
+                                <rect id="Box" x="0" y="0" width="257" height="48"></rect>
+                            </g>
+                        </g>
+                        <g id="Text/Title-2/Normal/White" transform="translate(114.000000, 8.000000)" font-size="20" font-family="OpenSans-Bold, Open Sans" line-spacing="32" fill="#FFFFFF" font-weight="bold">
+                            <text id="↳🖊Content">
+                                <tspan x="0" y="21">OK</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <text id="Please-give-the-devi" font-family="OpenSans, Open Sans" font-size="20" font-weight="normal" line-spacing="32" fill="#FFFFFF">
+                    <tspan x="69.5849609" y="197.6">Please give the device back to </tspan>
+                    <tspan x="69.4042969" y="229.6">the person who gave it to you</tspan>
+                    <tspan x="61.7773438" y="261.6">and wait for your appointment.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,137 +4,177 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <section class='container centered'>
 
-      <img class="centered question" src="http://placehold.it/850x550">
-      <p>How are you today?</p>
+  <navbar class="navbar">
+    <img src="./assets/icons/back_icon.svg" alt="back button" class="navbar__back">
+    <img src="./assets/logos/MakaTalk_logo_header_white.svg" alt="makatalk logo" class="navbar__logo">
+  </navbar>
 
-    <ul class="centered all-answers">
-      <li class="answer">
-        <figure>
-          <img src="http://placehold.it/150x125">
-          <figcaption>Very Bad</figcaption>
-        </figure>
-      </li>
-      <li class="answer">
-        <figure>
-          <img src="http://placehold.it/150x125">
-          <figcaption>Bad</figcaption>
-        </figure>
-      </li>
-      <li class="answer">
-        <figure>
-          <img src="http://placehold.it/150x125">
-          <figcaption>OK</figcaption>
-        </figure>
-      </li>
-      <li class="answer">
-        <figure>
-          <img src="http://placehold.it/150x125">
-          <figcaption>Good</figcaption>
-        </figure>
-      </li>
-      <li class="answer">
-        <figure>
-          <img src="http://placehold.it/150x125">
-          <figcaption>Very Good</figcaption>
-        </figure>
-      </li>
-    </ul>
-    <section class="buttons">
-    <button>Replay all ↺</button>
-    <button>Next question</button>
+  <section class="question-container">
+    <figure class="question-makaton">
+      <figcaption class="question-makaton-text">How are you today?</figcaption>
+      <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="question-makaton-video"></video>
+    </figure>
+
+  <div class="replay-makaton">
+    <img class="replay--makaton-button" src="./assets/icons/replay_icon.svg" alt="">
+  </div>
+
   </section>
+
+  <section class="answers-container">
+        <figure class="answer-makaton">
+          <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="answer-video"></video>
+        <figcaption class="answer-text">Very Bad</figcaption>
+        </figure>
+
+        <figure class="answer-makaton">
+          <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="answer-video"></video>
+          <figcaption class="answer-text">Bad</figcaption>
+        </figure>
+
+        <figure class="answer-makaton">
+          <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="answer-video"></video>
+          <figcaption class="answer-text">OK</figcaption>
+        </figure>
+
+        <figure class="answer-makaton">
+          <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="answer-video"></video>
+          <figcaption class="answer-text">Good</figcaption>
+        </figure>
+
+        <figure class="answer-makaton">
+          <video preload='auto' src=" https://s3-eu-west-1.amazonaws.com/makatalk-videos/answers/Very+Bad.mp4" type="video/mp4" class="answer-video"></video>
+          <figcaption class="answer-text">Very Good</figcaption>
+        </figure>
+
   </section>
+
+  <section class="next-question-cta">
+    <button type="button" class="next-question-button">Next question</button>
+  </section>
+
   <style>
-  :root{
-    --bg-color-clinician: #DF744A;
-    --bg-color-user: #DCB239;
-    --bg-form: white;
-    --box-bg-color: #FEDCD2;
-    --text-color: rgb(43, 43, 41);
-  }
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-    body {
-      color: var(--text-color);
-      box-sizing: border-box;
-      background-color: var(--bg-color-user);
-      font-family:'Ubuntu';
-      height: 100vh;
-    }
+:root {
+  --background-purple: #565CC8;
+}
 
-    .container {
-      background-color: var(--bg-form);
-      width: 90%;
-      height: 90%;
-      padding: 3%;
-      border-top:1px solid rgb(186, 152, 141);
-      border-radius:3px;
-      -webkit-box-shadow: 0px 1px 1px #000;
-      -moz-box-shadow: 0px 1px 1px #000;
-      box-shadow: 0px 1px 1px #000;
+.navbar {
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  display: flex;
+  background: var(--background-purple);
+}
 
-    }
-    .question {
-      width: 72%;
-    }
-    .buttons {
-      width: 80%;
-      margin: 2% auto 2%;
-    }
-    button {
-        border:0;
-        border-top:1px solid rgb(186, 152, 141);
-        border-radius:3px;
-        background: var(--bg-color-user);
-        width:49%;
-        color:#000;
-        font-size:2rem;
-        -webkit-text-shadow: 0px 1px 1px #fff;
-        -moz-text-shadow: 0px 1px 1px #fff;
-        text-shadow: 0px 2px 1px #fff;
-        -webkit-box-shadow: 0px 1px 1px #000;
-        -moz-box-shadow: 0px 1px 1px #000;
-        box-shadow: 0px 1px 1px #000;
 
-    }
-    li {
-      list-style: none;
+.navbar__logo {
+  margin: 0 auto;
+  transform: translate(-50%);
+}
 
-    }
+.navbar__back {
+  margin-left: 15px;
+}
 
-    .answer {
-      width: 19%;
-      display: inline-block;
-    }
-    .centered {
-      display: block;
-      margin: 0 auto;
-    }
-    p {
-      font-size: 2rem;
-      margin: 2%;
-      text-align: center;
-      -webkit-text-shadow: 0px 1px 1px #fff;
-      -moz-text-shadow: 0px 1px 1px #fff;
-      text-shadow: 0px 2px 1px #fff;
-    }
-    .all-answers {
-      width: 90%;
-      padding: 0;
-    }
-    figure {
-      margin: 0;
-    }
-    figure img {
-      width: 100%
-    }
-    figcaption {
-      text-align: center;
-    }
+.question-container {
+  background: var(--background-purple);
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+
+.question-makaton {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.question-makaton-text {
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-size: 2.5em;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.question-makaton-video {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.replay-makaton {
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.answers-container {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  /*flex-direction: row;*/
+}
+
+.answer-video {
+  max-width: 8em;
+  height: auto;
+}
+
+.answer-text {
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--background-purple);
+
+}
+
+
+
+
+
+.replay-makaton-button {
+  /*top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;*/
+}
+
+.answer-makaton {
+  width: 100%;
+}
+
+.answer-makaton-video {
+
+}
+
+.next-question-button {
+
+}
+
+.next-question-cta {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.next-question-button {
+  /*text-align: center;*/
+  font-size: 1.5em;
+  background: var(--background-purple);
+  color: #fff;
+  padding: 10px 50px;
+  border-radius: 50px;
+}
+
   </style>
 </body>
 
