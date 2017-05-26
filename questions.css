@@ -4,6 +4,10 @@
   --background-purple: #565CC8;
 }
 
+body {
+  margin: 0px;
+}
+
 .navbar {
   top: 0;
   width: 100%;
