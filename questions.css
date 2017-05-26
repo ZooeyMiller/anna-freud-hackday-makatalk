@@ -87,11 +87,18 @@
   color: var(--background-purple);
 }
 
-.replay-makaton-button {}
+
 
 .answer-makaton {
-  width: 33%;
   margin: 5px;
+}
+
+.four-answers {
+    width: 33%;
+}
+
+.five-answers {
+  width: 32%;
 }
 
 .answer-makaton-video {}
@@ -128,6 +135,9 @@ body {
   bottom: 4em;
   left: 1em;
   font-family: 'Open Sans', sans-serif;
+  transition: all 0.5s;
+  background-color: rgb(231, 212, 251);
+  padding: 0.5em;
 }
 
 .glowing-border {

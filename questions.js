@@ -51,14 +51,25 @@ videos.slice(1).forEach(e => {
     });
   });
 });
-
-document.querySelector('.back-to-top').addEventListener('click', () => {
+const backToTop = document.querySelector('.back-to-top');
+backToTop.addEventListener('click', () => {
   document.querySelector('.back-to-top').style.display = 'none';
   document.querySelector('.navbar').scrollIntoView();
 });
+
+document.querySelector('.back-to-top').className += ' glowing-border';
 
 document
   .querySelector('.replay--makaton-button')
   .addEventListener('click', function() {
     videos[0].play();
   });
+
+const answers = document.querySelectorAll('.answer-makaton');
+answers.forEach(e => {
+  if (answers.length > 4) {
+    e.className += ' five-answers';
+  } else {
+    e.className += ' four-answers';
+  }
+});
