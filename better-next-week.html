@@ -210,9 +210,9 @@ videos[videos.length - 1].addEventListener('ended', () => {
   document.querySelector('.back-to-top').style.display = 'initial';
 });
 
-// videos[0].addEventListener('canplaythrough', () => {
-//   videos[0].play();
-// });
+videos[0].addEventListener('canplaythrough', () => {
+  videos[0].play();
+});
 
 videos.slice(1).forEach(e => {
   e.addEventListener('playing', () => {
