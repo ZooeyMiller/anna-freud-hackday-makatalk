@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <navbar class="navbar">
+    <img src="./assets/icons/back_icon.svg" alt="back button" class="navbar__back">
+    <img src="./assets/logos/MakaTalk_logo_header_white.svg" alt="makatalk logo" class="navbar__logo">
+  </navbar>
+
+  <section class="question-container">
+    <figure class="question-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="question-makaton-video"></video>
+    </figure>
+
+    <div class="replay-makaton">
+      <img class="replay--makaton-button" src="./assets/icons/replay_icon.svg" alt="">
+    </div>
+
+  </section>
+
+  <h2 class="question-makaton-text">How are you today?</h2>
+
+  <section class="answers-container">
+
+    <figure class="answer-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="answer-video"></video>
+      <figcaption class="answer-text">Very Bad</figcaption>
+    </figure>
+
+    <figure class="answer-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="answer-video"></video>
+      <figcaption class="answer-text">Bad</figcaption>
+    </figure>
+
+    <figure class="answer-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="answer-video"></video>
+      <figcaption class="answer-text">OK</figcaption>
+    </figure>
+
+    <figure class="answer-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="answer-video"></video>
+      <figcaption class="answer-text">Good</figcaption>
+    </figure>
+
+    <figure class="answer-makaton">
+      <video preload='auto' src="./videos/Answers/Good.mp4" type="video/mp4" class="answer-video"></video>
+      <figcaption class="answer-text">Very Good</figcaption>
+    </figure>
+
+  </section>
+
+
+  <button type="button" class="next-question-button">Next question</button>
+
+<button class="back-to-top">Back to top</button>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+     :root {
+      --background-purple: #565CC8;
+    }
+
+    .navbar {
+      top: 0;
+      width: 100%;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      display: flex;
+      background: var(--background-purple);
+    }
+
+
+    .navbar__logo {
+      margin: 0 auto;
+      transform: translate(-50%);
+    }
+
+    .navbar__back {
+      margin-left: 15px;
+    }
+
+    .question-container {
+      background: var(--background-purple);
+      width: 100%;
+      padding: 20px 0 20px 0;
+    }
+
+    .question-makaton {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    .question-makaton-text {
+      text-align: center;
+      /*padding: 0 0 20px 0;*/
+      font-size: 2.5em;
+      color: var(--background-purple);
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .question-makaton-video {
+      max-width: 91%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .replay-makaton {
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 15%;
+    }
+
+    .answers-container {
+      background: #fff;
+      display: flex;
+      /* justify-content: space-between; */
+      flex-direction: row;
+      /*height: 90vh;*/
+      flex-wrap: wrap;
+      background-image: url('./assets/images/bear_image_light_small_flipped.png');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: 26%;
+      padding: 5px 0px 5px 5px;
+      position: relative;
+    }
+
+    .answer-video {
+      width: 100%;
+      height: auto;
+      /*transform-origin: center;*/
+      /*transition: width 1s ease, height 1s ease;*/
+      transition: width 0.5s;
+    }
+
+    .answer-text {
+      text-align: center;
+      font-size: 1.25em;
+      font-family: 'Open Sans', sans-serif;
+      color: var(--background-purple);
+    }
+
+    .replay-makaton-button {
+    }
+
+    .answer-makaton {
+      width: 32%;
+      margin: 5px;
+    }
+
+    .answer-makaton-video {}
+
+    .next-question-button {
+      margin: 1% auto;
+      display: block;
+    }
+    /*.next-question-cta {
+      text-align: center;
+      font-size: 1.5em;
+      height: 10vh;
+      padding: 20px;
+    }*/
+
+    .next-question-button {
+      /*text-align: center;*/
+      font-size: 1.5em;
+      background: var(--background-purple);
+      color: #fff;
+      padding: 10px 50px;
+      border-radius: 50px;
+    }
+
+    .playing-answer {
+      position: absolute;
+      width: 90%;
+      left: 50%;
+      bottom: 0%;
+      transform: translate(-50%);
+    }
+    body {
+      height: auto;
+    }
+    .back-to-top {
+      display: none;
+      position: relative;
+      bottom: 1em;
+      left: 1em;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+  <script>
+  const videos = Array.from(document.querySelectorAll('video'));
+
+videos[0].addEventListener('ended', () => {
+  document.querySelector('.next-question-button').scrollIntoView();
+});
+videos.forEach((e, i) => {
+  e.addEventListener('ended', () => {
+    videos[i + 1].play();
+  });
+});
+document.querySelectorAll('.answer').forEach((e, i) => {
+  e.addEventListener('click', () => {
+    alert(`I am the ${i + 1}st answer`);
+  });
+});
+videos[videos.length - 1].addEventListener('ended', () => {
+  console.log('happened');
+  document.querySelector('.back-to-top').style.display = 'initial';
+});
+
+// videos[0].addEventListener('canplaythrough', () => {
+//   videos[0].play();
+// });
+
+videos.slice(1).forEach(e => {
+  e.addEventListener('playing', () => {
+    e.className += ' playing-answer';
+    videos.slice(1).forEach(video => {
+      if (video !== e) {
+        video.style.visibility = 'hidden';
+      }
+    });
+    e.addEventListener('ended', () => {
+      e.classList.remove('playing-answer');
+      videos.slice(1).forEach(video => {
+        if (video !== e) {
+          video.style.visibility = 'initial';
+        }
+      });
+    });
+  });
+});
+
+document.querySelector('.back-to-top').addEventListener('click', () => {
+  document.querySelector('.back-to-top').style.display = 'none';
+  document.querySelector('.navbar').scrollIntoView();
+});
+
+document
+  .querySelector('.replay--makaton-button')
+  .addEventListener('click', function() {
+    videos[0].play();
+  });
+</script>
+</body>
+
+</html>
