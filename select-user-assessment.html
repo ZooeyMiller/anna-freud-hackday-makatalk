@@ -10,10 +10,28 @@
 
   <body>
     <section class="select-user-assessment-page-container">
-      <img class="select-user-assessment-page-img" src="assets/components/choose_action_modal.png" onclick="location.href='confirm-details.html'"></img>
+      <section class="select-user-assessment-form-container">
+
+        <form class="select-user-assessment-form">
+
+          <img src="./assets/logos/MakaTalk-logo.png" alt="makatalk logo" class="makatalk-logo">
+          <p class="p1">Hi Farrah,</p>
+          <p class="p2">Let's start a new assessment</p>
+
+          <img class="select-user-assessment-form-img" src="assets/components/jimmy-select.png" class="patient-select"></img>
+
+          <p class="select-action-prompt">Please select an action for this user</p>
+
+          <button class="choose-survey-button pre-assement-button" type="button" onclick="location.href='welcome-user.html'">Pre Assessment</button>
+          <button class="choose-survey-button post-assement-button" type="button">Post Assessment</button>
+          <button class="choose-survey-button assessment-results-button" type="button" onclick="location.href='clinician-dashboard.html'">See user's results</button>
+        </form>
+      </section>
     </section>
 
   <style>
+
+
     .select-user-assessment-page-container {
         min-height: 100%;
         width: 100%;
@@ -23,27 +41,78 @@
         background-size: cover;
       }
 
-      .select-user-assessment-page-img {
+      .select-user-assessment-form-container {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
         width: 25em;
-        height: auto;
+        background: red;
+        height: 30em;
+        text-align: center;
+        border-radius: 4px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(146,143,143,50);
+      }
+
+      .select-user-assessment-form {
+        width: 70%;
+        height: 100%;
+        margin: 40px auto;
+      }
+
+      .makatalk-logo {
+        margin-top: 40px;
+      }
+
+      .p1 {
+        font-size: 1.25em;
+        color: #5144AF;
+        margin-bottom: 0;
+      }
+
+      .p2 {
+        font-size: 1.25em;
+        color: #5144AF;
+        margin-top: 10px;
+      }
+
+      .patient-select {
+        width: 100%;
+      }
+
+      .select-action-prompt{
+        text-align: left;
+        font-size: 0.875;
+        color: #5144AF;
+        margin: 40px 0 5px 0;
+      }
+
+      .choose-survey-button {
+        padding: 10px 50px 10px 50px;
+        font-size: 1.25em;
+        border: none;
+        width: 100%;
+        color: #fff;
+        margin: 5px 0 5px 0;
+        border-radius: 4px;
+      }
+
+      .assessment-results-button {
+        background: #fff;
+        border: 1px solid #5144AF;
+        color: #5144AF;
+      }
+
+      .pre-assement-button {
+        background: #5144AF;
+      }
+
+      .post-assement-button {
+        background: #D90368;
       }
 
   </style>
 </body>
 
 </html>
-
-
-<!-- <section id='selection'>
-  <button class='sign-out' type="button">Sign Out</button>
-  <h1 id='welcome'> Select user and assessment type</h1>
-  <div id='btn-group'>
-  <button class='yellow-btn'>Please Select User</button>
-  <button class='orange-btn'type="button">Pre Asessment</button>
-  <button class='blue-btn'type="button">Post Asessment</button>
-</div>
-</section> -->

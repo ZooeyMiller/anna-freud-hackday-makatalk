@@ -7,14 +7,50 @@
   </head>
 
   <body>
+    <section class="clinician-dashboard-page-container">
 
-    <section class="dashboard-header-container">
-    <img class="dashboard-header-img" src="assets/components/header_dashboard.png"></img>
+      <section class="dashboard-header-container">
+        <img class="dashboard-header-img" src="assets/components/header_dashboard.png" onclick="location.href='login.html'"></img>
+      </section>
+
+      <section class="dashboard-img-container">
+        <img class="dashboard-img" src="assets/components/Bounding Box@3x.png.png"></img>
+      </section>
+
+      <button onclick="location.href='select-user-assessment.html'" class="dashboard-start-new-session-button" type="button">
+        Start new session
+      </button>
     </section>
 
-    <section class="dashboard-img-container">
-    <img class="answers-img" src="assets/components/Bounding Box@3x.png.png"></img>
-    </section>
+    <style>
+    .clinician-dashboard-page-container {
+      min-height: 100%;
+      width: 100%;
+      text-align: center;
+    }
 
+    .dashboard-header-img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .dashboard-img-container {
+      width: 100%;
+      /*text-align: center;*/
+      margin-top: 40px;
+    }
+    .dashboard-img {
+      max-width: 75%;
+      height:auto;
+    }
+
+    .dashboard-start-new-session-button {
+      background: #5144AF;
+      color: #fff;
+      padding: 10px 50px 10px 50px;
+      font-size: 1.5em;
+      border: none;
+    }
+    </style>
   </body>
 </html>
