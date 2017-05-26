@@ -10,10 +10,16 @@
 
   <body>
     <section class="select-user-assessment-page-container">
-      <img class="select-user-assessment-page-img" src="assets/components/choose_action_modal.png" onclick="location.href='confirm-details.html'"></img>
+
+      <form class="select-user-assessment-form">
+
+      <img class="select-user-assessment-form-img" src="assets/components/choose_action_modal.png" onclick="location.href='confirm-details.html'"></img>
+      </form>
     </section>
 
   <style>
+
+
     .select-user-assessment-page-container {
         min-height: 100%;
         width: 100%;
@@ -23,13 +29,23 @@
         background-size: cover;
       }
 
-      .select-user-assessment-page-img {
+      .select-user-assessment-form {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
         position: absolute;
         width: 25em;
-        height: auto;
+        background: red;
+        height: 30em;
+        text-align: center;
+        border-radius: 4px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(146,143,143,50);
+      }
+
+      .select-user-assessment-form-img {
+        width: 99%;
+        height: 99%;
       }
 
   </style>
